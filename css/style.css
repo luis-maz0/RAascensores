@@ -56,9 +56,6 @@ h2 {
   font-size: 2rem;
 }
 h3 {
-  font-size: 1.25rem;
-}
-h4 {
   font-size: 0.875rem;
 }
 p {
@@ -73,9 +70,6 @@ p {
     font-size: 2.5rem;
   }
   h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
     font-size: 1rem;
   }
   body {
@@ -100,8 +94,9 @@ p {
   transition: var(--transition);
   border: 2px solid transparent;
 }
-.section{
-    padding: 5rem 0;
+.btn:hover{
+  color: var(--clr-white);
+  background-color: green;
 }
 .section-title{
     text-align: center;
@@ -243,6 +238,9 @@ p {
 }
 /* FIN ABOUT */
 /* Servicios */
+.servicios{
+  padding-top: 5rem;
+}
 .servicio{
     text-align: center;
     margin-bottom: 3rem;
@@ -279,3 +277,100 @@ p {
     }
 }
 /* FIN Servicios */
+/* Contacto */
+.contacto{
+  padding-top: 0;
+}
+.contacto-title{
+  text-align: center;
+}
+.contacto-form {
+  width: 80vw;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.contacto-btn{
+  margin-top: 2rem;
+}
+input, textarea {
+  font-family: var(--ff-secondary);
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* FIN Contacto */
+/* Footer */
+footer {
+  margin-top: 10rem;
+  background-color: var(--clr-black);
+  padding: 2rem;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+.footer-info {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.footer-data{
+  color: var(--clr-white);
+  margin: 5px 0;
+  font-size: 0.7rem;
+  letter-spacing: var(--spacing);
+}
+.footer-derechos{
+  color: var(--clr-white);
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0;
+  margin-top: 1rem;
+}
+.footer-icon{
+  color: var(--clr-white);
+}
+.footer-info img,
+.footer-info svg {
+    width: 1.5rem; /* Tamaño del ícono */
+    height: 1.5rem;
+}
+
+@media screen and (min-width:768px) {
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+}
+/* FIN Footer */
+/* Whats app */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}

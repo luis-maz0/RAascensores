@@ -1,125 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- MetaTags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="RA Ascensores: Mantenimiento, renovación y seguridad de ascensores en Argentina. Servicio técnico 24/7 y asesoramiento especializado."
+    />
+    <meta
+      name="keywords"
+      content="mantenimiento de ascensores, reparación de ascensores, servicio técnico ascensores, seguridad ascensores, RA Ascensores"
+    />
+    <meta name="author" content="RA Ascensores by LuisMazo" />
+    <meta name="robots" content="index, follow" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Optimizacion de redes sociales -->
+    <meta
+      property="og:title"
+      content="RA Ascensores - Mantenimiento y Seguridad"
+    />
+    <meta
+      property="og:description"
+      content="Expertos en mantenimiento y renovación de ascensores con servicio 24/7 en Argentina."
+    />
+    <meta
+      property="og:image"
+      content="https://raascensores.com.ar/assets/images/ra-logo.avif"
+    />
+    <meta property="og:url" content="https://raascensores.com.ar" />
+    <meta name="twitter:card" content="summary_large_image" />
     <!-- Google Icons -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
     <!-- CSS -->
-     <link rel="stylesheet" href="css/style.css">
-     <!-- Google fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-     
-    <title>RA ascensores</title>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Script JSON-LD para indicar que es negocio -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "RA Ascensores",
+          "image": "https://raascensores.com.ar/assets/images/ra-logo.avif",
+          "telephone": "+54 11 6466-1547",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ALT. BOWN 971 OF.1-E",
+            "addressLocality": "Buenos Aires",
+            "addressCountry": "AR"
+          },
+          "url": "https://raascensores.com.ar",
+          "sameAs": [
+            "https://facebook.com/raascensores",
+            "https://instagram.com/raascensores"
+          ]
+        }
+        </script>        
+    <title>
+      RA Ascensores | Mantenimiento, Renovación y Seguridad en Argentina
+    </title>
+  </head>
 
-<body>
+  <body>
     <!-- Menu -->
     <nav class="navbar">
-        <div class="navbar-center">
-            <!-- Navbar header -->
-            <div class="navbar-header">
-                <div class="navbar-logo" >
-                    <a href="#">
-                        <div class="navbar-logo-elements">
-                            <img src="assets/images/ra-logo.avif" alt="logo RA-ascensores" class="navbar-logo-img"> 
-                            <span class="navbar-logo-text ">RA ascensores</span>
-                        </div>
-                    </a>
-                </div>
-                <button id="navbar-toggle" class="navbar-toggle">
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
-                </button>
-            </div>
-            <!-- FIN Navbar header -->
-             <!-- Navbar links -->
-            <ul class="navbar-links" id="navbar-links">
-                <li>
-                    <a href="#nosotros" class="navbar-link scroll-link">nosotros</a>
-                </li>
-                <li>
-                    <a href="#servicios" class="navbar-link scroll-link">servicios</a>
-                </li>
-                <li>
-                    <a href="#contacto" class="navbar-link scroll-link">contacto</a>
-                </li>
-            </ul>
-            <!-- FIN Navbar links -->
+      <div class="navbar-center">
+        <!-- Navbar header -->
+        <div class="navbar-header">
+          <div class="navbar-logo">
+            <a href="#">
+              <div class="navbar-logo-elements">
+                <img
+                  loading="lazy"
+                  src="assets/images/ra-logo.avif"
+                  alt="logo RA-ascensores"
+                  class="navbar-logo-img"
+                />
+                <span class="navbar-logo-text">RA ascensores</span>
+              </div>
+            </a>
+          </div>
+          <button id="navbar-toggle" class="navbar-toggle">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
         </div>
+        <!-- FIN Navbar header -->
+        <!-- Navbar links -->
+        <ul class="navbar-links" id="navbar-links">
+          <li>
+            <a href="#nosotros" class="navbar-link scroll-link">nosotros</a>
+          </li>
+          <li>
+            <a href="#servicios" class="navbar-link scroll-link">servicios</a>
+          </li>
+          <li>
+            <a href="#contacto" class="navbar-link scroll-link">contacto</a>
+          </li>
+        </ul>
+        <!-- FIN Navbar links -->
+      </div>
     </nav>
     <!-- FIN Menu -->
     <!-- About -->
-     <header id="home">
-        <div class="presentacion">
-            <div class="presentacion-banner">
-                <h1>Expertos en Mantenimiento y Seguridad de Ascensores</h1>
-                <p>
-                    En RA Ascensores, nuestra prioridad es la seguridad y el buen funcionamiento de sus ascensores. Ofrecemos un servicio de mantenimiento que comienza con una inspección completa del equipo y un informe detallado, para que cada acción sea precisa y eficaz.
-                </p>
-            </div>
+    <header id="home">
+      <div class="presentacion">
+        <div class="presentacion-banner">
+          <h1>Expertos en Mantenimiento y Seguridad de Ascensores</h1>
+          <p>
+            En RA Ascensores, nuestra prioridad es la seguridad y el buen
+            funcionamiento de sus ascensores. Ofrecemos un servicio de
+            mantenimiento que comienza con una inspección completa del equipo y
+            un informe detallado, para que cada acción sea precisa y eficaz.
+          </p>
         </div>
-     </header>
+      </div>
+    </header>
     <!-- FIN About -->
     <!-- Nuestros servicios -->
-     <section id="servicios" class="section servicios">
-        <!-- Servicios header -->
-        <div class="section-title">
-            <h2>Nuestros servicios</h2>
-        </div>
-        <!-- FIN Servicios header -->
-        <!-- Servicios container -->
-        <div class="section-center servicios-center">
-            <!-- servicio -->
-            <article class="servicio">
-                <img class="servicio-img" src="assets/images/img-service-1.avif" alt="servicio de mantenimineto con abono mensual">
-                <div class="servicio-info">
-                    <h4 class="servicio-titulo">Asistencia Técnica Disponible Siempre</h4>
-                    <p class="servicio-texto">Con un abono mensual  tendrá la tranquilidad de un servicio continuo respaldado por guardias disponibles las 24 horas.</p>
-                </div>
-            </article>
-            <!-- FIN servicio -->
-            <!-- servicio -->
-            <article class="servicio">
-                <img class="servicio-img" src="assets/images/img-service-2.avif" alt="servicio de mantenimineto con abono mensual">
-                <div class="servicio-info">
-                    <h4 class="servicio-titulo">Soluciones para Montavehículos y Más</h4>
-                    <p class="servicio-texto">Ofrecemos un mantenimiento para montavehiculos, montaplatos, montacargas, cualquier tipo de transporte vertical</p>
-                </div>
-            </article>
-            <!-- FIN servicio -->
-            <!-- servicio -->
-            <article class="servicio">
-                <img class="servicio-img" src="assets/images/img-service-3.avif" alt="servicio de mantenimineto con abono mensual">
-                <div class="servicio-info">
-                    <h4 class="servicio-titulo">Renovación y Mejoras de Ascensores</h4>
-                    <p class="servicio-texto">Mejoramos su rendimiento tanto en la parte electronica como estetica del ascensor, realizando revestimientos y adaptaciones de cualquier tipo.</p>
-                </div>
-            </article>
-            <!-- FIN servicio -->
-            <!-- servicio -->
-            <article class="servicio">
-                <img class="servicio-img" src="assets/images/img-service-4.avif" alt="servicio de mantenimineto con abono mensual">
-                <div class="servicio-info">
-                    <h4 class="servicio-titulo">Soluciones Adaptadas a tus Necesidades</h4>
-                    <p class="servicio-texto">Elaboramos un informe detallado que nos permite realizar un mantenimiento adaptado a sus necesidades.</p>
-                </div>
-            </article>
-            <!-- FIN servicio -->
-        </div>
-        <!-- FIN Servicios container -->
-     </section>
+    <section id="servicios" class="section servicios">
+      <!-- Servicios header -->
+      <div class="section-title">
+        <h2>Nuestros servicios</h2>
+      </div>
+      <!-- FIN Servicios header -->
+      <!-- Servicios container -->
+      <div class="section-center servicios-center">
+        <!-- servicio -->
+        <article class="servicio">
+          <img
+            loading="lazy"
+            class="servicio-img"
+            src="assets/images/img-service-1.avif"
+            alt="servicio de mantenimineto con abono mensual"
+          />
+          <div class="servicio-info">
+            <h3 class="servicio-titulo">
+              Asistencia Técnica Disponible Siempre
+            </h3>
+            <p class="servicio-texto">
+              Con un abono mensual tendrá la tranquilidad de un servicio
+              continuo respaldado por guardias disponibles las 24 horas.
+            </p>
+          </div>
+        </article>
+        <!-- FIN servicio -->
+        <!-- servicio -->
+        <article class="servicio">
+          <img
+            loading="lazy"
+            class="servicio-img"
+            src="assets/images/img-service-2.avif"
+            alt="servicio de mantenimineto con abono mensual"
+          />
+          <div class="servicio-info">
+            <h3 class="servicio-titulo">
+              Soluciones para Montavehículos y Más
+            </h3>
+            <p class="servicio-texto">
+              Ofrecemos un mantenimiento para montavehiculos, montaplatos,
+              montacargas, cualquier tipo de transporte vertical
+            </p>
+          </div>
+        </article>
+        <!-- FIN servicio -->
+        <!-- servicio -->
+        <article class="servicio">
+          <img
+            loading="lazy"
+            class="servicio-img"
+            src="assets/images/img-service-3.avif"
+            alt="servicio de mantenimineto con abono mensual"
+          />
+          <div class="servicio-info">
+            <h3 class="servicio-titulo">Renovación y Mejoras de Ascensores</h3>
+            <p class="servicio-texto">
+              Mejoramos su rendimiento tanto en la parte electronica como
+              estetica del ascensor, realizando revestimientos y adaptaciones de
+              cualquier tipo.
+            </p>
+          </div>
+        </article>
+        <!-- FIN servicio -->
+        <!-- servicio -->
+        <article class="servicio">
+          <img
+            loading="lazy"
+            class="servicio-img"
+            src="assets/images/img-service-4.avif"
+            alt="servicio de mantenimineto con abono mensual"
+          />
+          <div class="servicio-info">
+            <h3 class="servicio-titulo">
+              Soluciones Adaptadas a tus Necesidades
+            </h3>
+            <p class="servicio-texto">
+              Elaboramos un informe detallado que nos permite realizar un
+              mantenimiento adaptado a sus necesidades.
+            </p>
+          </div>
+        </article>
+        <!-- FIN servicio -->
+      </div>
+      <!-- FIN Servicios container -->
+    </section>
     <!-- FIN Nuestros servicios -->
 
     <!-- Contacto -->
-
+    <section class="section contacto">
+      <h2 class="contacto-title">CONTACTO</h2>
+      <form class="contacto-form" method="POST">
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Nombre"
+          required
+          autocomplete="name"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          autocomplete="email"
+        />
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn contacto-btn">Enviar</button>
+      </form>
+    </section>
     <!-- Footer -->
-     <script src="js/index.js"></script>
-</body>
-
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <img
+            loading="lazy"
+            src="assets/images/icons/pin_drop.svg"
+            alt="icono de direccion"
+          />
+          <p class="footer-data">ALT. BOWN 971 OF.1-E</p>
+        </div>
+        <div class="footer-info">
+          <img
+            loading="lazy"
+            src="assets/images/icons/phone_iphone.svg"
+            alt="icono de telefono"
+          />
+          <p class="footer-data">+54 11 6466-1547</p>
+        </div>
+        <div class="footer-info">
+          <img
+            loading="lazy"
+            src="assets/images/icons/description.svg"
+            alt="icono de description"
+          />
+          <p class="footer-data">MATRICULA CONSERVADOR 111</p>
+        </div>
+      </div>
+      <p class="footer-derechos">
+        Todos los derechos reservados 2024 - RA ascensores
+      </p>
+    </footer>
+    <!-- FIN footer -->
+    <!-- Whats app -->
+    <a
+      href="https://wa.me/5491164661547"
+      target="_blank"
+      class="whatsapp-float"
+    >
+      <img
+        loading="lazy"
+        src="assets/images/icons/whatsapp.svg"
+        alt="WhatsApp"
+      />
+    </a>
+    <script src="js/index.js" defer></script>
+  </body>
 </html>
