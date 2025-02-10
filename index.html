@@ -35,6 +35,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
     />
+    <!-- Alertify -->
+    <link rel="stylesheet" href="css/alertify.min.css" />
+    <link rel="stylesheet" href="css/themes/default.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Google fonts -->
@@ -77,7 +80,7 @@
         <!-- Navbar header -->
         <div class="navbar-header">
           <div class="navbar-logo">
-            <a href="#">
+            <a href="#inicio">
               <div class="navbar-logo-elements">
                 <img
                   loading="lazy"
@@ -97,7 +100,7 @@
         <!-- Navbar links -->
         <ul class="navbar-links" id="navbar-links">
           <li>
-            <a href="#nosotros" class="navbar-link scroll-link">nosotros</a>
+            <a href="#inicio" class="navbar-link scroll-link">nosotros</a>
           </li>
           <li>
             <a href="#servicios" class="navbar-link scroll-link">servicios</a>
@@ -111,7 +114,7 @@
     </nav>
     <!-- FIN Menu -->
     <!-- About -->
-    <header id="home">
+    <header id="inicio">
       <div class="presentacion">
         <div class="presentacion-banner">
           <h1>Expertos en Mantenimiento y Seguridad de Ascensores</h1>
@@ -215,54 +218,59 @@
     <!-- FIN Nuestros servicios -->
 
     <!-- Contacto -->
-    <section class="section contacto">
+    <section id="contacto" class="section contacto">
       <h2 class="contacto-title">CONTACTO</h2>
-      <form class="contacto-form" method="POST">
-        <input
-          type="text"
-          name="nombre"
-          placeholder="Nombre"
-          required
-          autocomplete="name"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-          autocomplete="email"
-        />
-        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-        <button type="submit" class="btn contacto-btn">Enviar</button>
-      </form>
+      <form id="contactoForm" action="#" class="contacto-form" method="POST">
+    <input
+      type="text"
+      name="nombre"
+      id="nombre"
+      placeholder="Nombre"
+      required
+      autocomplete="name"
+    />
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Email"
+      required
+      autocomplete="email"
+    />
+    <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
+    <button type="submit" class="btn contacto-btn">Enviar</button>
+  </form>
     </section>
+    <!-- FIN contacto -->
     <!-- Footer -->
     <footer>
       <div class="footer-container">
         <div class="footer-info">
+            <img
+              loading="lazy"
+              src="assets/images/icons/phone_iphone.svg"
+              alt="icono de telefono"
+            />
+            <p class="footer-data">+54 11 6466-1547</p>
+          </div>
+          <div class="footer-info">
+            <img
+              loading="lazy"
+              src="assets/images/icons/description.svg"
+              alt="icono de description"
+            />
+            <p class="footer-data">PERMISO CONSERVADOR</p>
+          </div>
+          <div class="footer-info">
           <img
             loading="lazy"
             src="assets/images/icons/pin_drop.svg"
             alt="icono de direccion"
           />
-          <p class="footer-data">ALT. BOWN 971 OF.1-E</p>
+          <p class="footer-data">3 DE FEBRERO: Nº 111</p>
+          <p class="footer-data">MORON: A-0146</p>
         </div>
-        <div class="footer-info">
-          <img
-            loading="lazy"
-            src="assets/images/icons/phone_iphone.svg"
-            alt="icono de telefono"
-          />
-          <p class="footer-data">+54 11 6466-1547</p>
-        </div>
-        <div class="footer-info">
-          <img
-            loading="lazy"
-            src="assets/images/icons/description.svg"
-            alt="icono de description"
-          />
-          <p class="footer-data">MATRICULA CONSERVADOR 111</p>
-        </div>
+        
       </div>
       <p class="footer-derechos">
         Todos los derechos reservados 2024 - RA ascensores
@@ -281,6 +289,7 @@
         alt="WhatsApp"
       />
     </a>
+    <script src="js/alertify.min.js" defer></script>
     <script src="js/index.js" defer></script>
   </body>
 </html>
