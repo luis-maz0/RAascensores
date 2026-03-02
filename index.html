@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- MetaTags -->
@@ -49,58 +49,62 @@
     />
     <!-- Script JSON-LD para indicar que es negocio -->
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "RA Ascensores",
-          "image": "https://raascensores.com.ar/assets/images/ra-logo.avif",
-          "telephone": "+54 11 6466-1547",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "ALT. BOWN 971 OF.1-E",
-            "addressLocality": "Buenos Aires",
-            "addressCountry": "AR"
-          },
-          "url": "https://raascensores.com.ar",
-          "sameAs": [
-            "https://facebook.com/raascensores",
-            "https://instagram.com/raascensores"
-          ]
-        }
-        </script>        
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "RA Ascensores",
+        "image": "https://raascensores.com.ar/assets/images/ra-logo.avif",
+        "telephone": "+54 11 6466-1547",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ALT. BOWN 971 OF.1-E",
+          "addressLocality": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "url": "https://raascensores.com.ar",
+        "sameAs": [
+          "https://facebook.com/raascensores",
+          "https://instagram.com/raascensores"
+        ]
+      }
+    </script>
+    <link
+      rel="shortcut icon"
+      href="assets/images/ra-logo.png"
+      type="image/x-icon"
+    />
     <title>
-      RA Ascensores | Mantenimiento, Renovación y Seguridad en Argentina
+      RA Ascensores | Mantenimiento general y preventivo, Renovación y Seguridad
+      en Argentina
     </title>
   </head>
 
   <body>
-    <!-- Menu -->
     <nav class="navbar">
       <div class="navbar-center">
-        <!-- Navbar header -->
         <div class="navbar-header">
           <div class="navbar-logo">
             <a href="#inicio">
-              <div class="navbar-logo-elements">
-                <img
-                  loading="lazy"
-                  src="assets/images/ra-logo.png"
-                  alt="logo RA-ascensores"
-                  class="navbar-logo-img"
-                />
-                <span class="navbar-logo-text">RA ascensores</span>
-              </div>
+              <img
+                loading="lazy"
+                src="assets/images/RA_logo.png"
+                alt="logo RA-ascensores"
+                class="navbar-logo-img"
+              />
             </a>
           </div>
           <button id="navbar-toggle" class="navbar-toggle">
             <span class="material-symbols-outlined"> menu </span>
           </button>
         </div>
-        <!-- FIN Navbar header -->
-        <!-- Navbar links -->
         <ul class="navbar-links" id="navbar-links">
           <li>
             <a href="#inicio" class="navbar-link scroll-link">nosotros</a>
+          </li>
+          <li>
+            <a href="#por-que-elegirnos" class="navbar-link scroll-link"
+              >ventajas</a
+            >
           </li>
           <li>
             <a href="#servicios" class="navbar-link scroll-link">servicios</a>
@@ -109,40 +113,93 @@
             <a href="#contacto" class="navbar-link scroll-link">contacto</a>
           </li>
         </ul>
-        <!-- FIN Navbar links -->
       </div>
     </nav>
-    <!-- FIN Menu -->
-    <!-- About -->
     <header id="inicio">
       <div class="presentacion">
         <div class="presentacion-banner">
-          <h1>Expertos en Mantenimiento y Seguridad de Ascensores</h1>
+          <h1>Instalación, Modernización y mantenimiento de ascensores</h1>
           <p>
-            En RA Ascensores, nuestra prioridad es la seguridad y el buen
-            funcionamiento de sus ascensores. Ofrecemos un servicio de
-            mantenimiento que comienza con una inspección completa del equipo y
-            un informe detallado, para que cada acción sea precisa y eficaz.
+            Brindamos un <strong>compromiso directo</strong> enfocado en un
+            mantenimiento altamente preventivo. Nos destacamos por nuestra
+            atención súper detallista y respuesta rápida ante
+            <strong>emergencias</strong>. Trabajamos con precios competitivos y
+            contamos con <strong>todos los permisos correspondientes</strong> al
+            día.
           </p>
+          <a href="#por-que-elegirnos" class="btn btn-hero"
+            >Conocé cómo trabajamos</a
+          >
         </div>
       </div>
     </header>
-    <!-- FIN About -->
-    <!-- Nuestros servicios -->
+    <section id="por-que-elegirnos" class="section features">
+      <div class="section-title">
+        <h2>¿Por qué elegir RA Ascensores?</h2>
+      </div>
+      <div class="section-center features-center">
+        <div class="feature-card">
+          <h3>Puesta a punto Día 1</h3>
+          <img
+            class="feature-icon"
+            loading="lazy"
+            width="20"
+            src="assets/images/icons/puesta_punto.svg"
+            alt="icono de puesta a punto el primer dia"
+          />
+          <p>
+            Al contratarnos, realizamos una revisión exhaustiva de todo el
+            equipo desde el primer día para garantizar que no haya fallos
+            inesperados a futuro.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Papeles y Seguros en Regla</h3>
+          <img
+            class="feature-icon"
+            loading="lazy"
+            src="assets/images/icons/papeles_al_dia.svg"
+            alt="icono de papeles al dia"
+          />
+          <p>
+            Somos una Empresa Habilitada. Te entregamos la tranquilidad legal
+            que todo administrador y consorcio necesita, con seguros y permisos
+            al día.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Precios Competitivos</h3>
+          <img
+            class="feature-icon"
+            loading="lazy"
+            width="20"
+            src="assets/images/icons/precios_competitivos.svg"
+            alt="icono de precios competitivos"
+          />
+          <p>
+            Brindamos un servicio de excelencia a un costo accesible y
+            transparente para su consorcio o edificio.
+          </p>
+          <a
+            href="https://wa.me/5491164661547?text=Hola,%20quisiera%20pedir%20una%20cotización%20de%20abono"
+            target="_blank"
+            class="btn feature-btn"
+            >Pedir cotización de abono</a
+          >
+        </div>
+      </div>
+    </section>
+
     <section id="servicios" class="section servicios">
-      <!-- Servicios header -->
       <div class="section-title">
         <h2>Nuestros servicios</h2>
       </div>
-      <!-- FIN Servicios header -->
-      <!-- Servicios container -->
       <div class="section-center servicios-center">
-        <!-- servicio -->
         <article class="servicio">
           <img
             loading="lazy"
             class="servicio-img"
-            src="assets/images/img-service-1.avif"
+            src="assets/images/services/img-service-1.avif"
             alt="servicio de mantenimineto con abono mensual"
           />
           <div class="servicio-info">
@@ -155,13 +212,11 @@
             </p>
           </div>
         </article>
-        <!-- FIN servicio -->
-        <!-- servicio -->
         <article class="servicio">
           <img
             loading="lazy"
             class="servicio-img"
-            src="assets/images/img-service-2.avif"
+            src="assets/images/services/img-service-2.avif"
             alt="servicio de mantenimineto con abono mensual"
           />
           <div class="servicio-info">
@@ -169,116 +224,190 @@
               Soluciones para Montavehículos y Más
             </h3>
             <p class="servicio-texto">
-              Ofrecemos un mantenimiento para montavehiculos, montaplatos,
-              montacargas, cualquier tipo de transporte vertical
+              Ofrecemos un mantenimiento para montavehículos, montaplatos,
+              montacargas y cualquier tipo de transporte vertical.
             </p>
           </div>
         </article>
-        <!-- FIN servicio -->
-        <!-- servicio -->
         <article class="servicio">
           <img
             loading="lazy"
             class="servicio-img"
-            src="assets/images/img-service-3.avif"
+            src="assets/images/services/img-service-3.avif"
             alt="servicio de mantenimineto con abono mensual"
           />
           <div class="servicio-info">
             <h3 class="servicio-titulo">Renovación y Mejoras de Ascensores</h3>
             <p class="servicio-texto">
-              Mejoramos su rendimiento tanto en la parte electronica como
-              estetica del ascensor, realizando revestimientos y adaptaciones de
+              Mejoramos su rendimiento tanto en la parte electrónica como
+              estética del ascensor, realizando revestimientos y adaptaciones de
               cualquier tipo.
             </p>
           </div>
         </article>
-        <!-- FIN servicio -->
-        <!-- servicio -->
         <article class="servicio">
           <img
             loading="lazy"
             class="servicio-img"
-            src="assets/images/img-service-4.avif"
-            alt="servicio de mantenimineto con abono mensual"
+            src="assets/images/services/img-service-4.avif"
+            alt="Modernización de ascensores antiguos"
           />
           <div class="servicio-info">
             <h3 class="servicio-titulo">
-              Soluciones Adaptadas a tus Necesidades
+              Modernizaciones para Cualquier Tipo de Ascensor
             </h3>
             <p class="servicio-texto">
-              Elaboramos un informe detallado que nos permite realizar un
-              mantenimiento adaptado a sus necesidades.
+              Transformamos ascensores antiguos y desgastados en equipos de
+              última generación. Modernizamos la tecnología, la seguridad y la
+              estética para dejarlos como nuevos.
             </p>
           </div>
         </article>
-        <!-- FIN servicio -->
       </div>
-      <!-- FIN Servicios container -->
     </section>
-    <!-- FIN Nuestros servicios -->
+    <section id="zonas" class="section zonas-cobertura">
+      <div class="section-center">
+        <h2>Áreas de Cobertura</h2>
+        <div class="zonas-tags">
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=1-DcFEtLrlOqoAmN4QhTqh-cV1rkGtTA&ehbc=2E312F&noprof=1"
+            width="740"
+            height="580"
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="section contacto">
-      <h2 class="contacto-title">CONTACTO</h2>
-      <form id="contactoForm" action="https://formspree.io/f/xnnjzejw" class="contacto-form" method="POST">
-    <input
-      type="text"
-      name="nombre"
-      id="nombre"
-      placeholder="Nombre"
-      required
-      autocomplete="name"
-    />
-    <input
-      type="email"
-      name="email"
-      id="email"
-      placeholder="Email"
-      required
-      autocomplete="email"
-    />
-    <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
-    <button type="submit" class="btn contacto-btn">Enviar</button>
-  </form>
+    <section id="partners" class="section partners">
+      <div class="section-title">
+        <h2>Empresas que confían en nosotros</h2>
+      </div>
+      <div class="partners-carousel-wrapper">
+        <div class="partners-carousel">
+          <div class="partner-box">
+            <img
+              src="assets/images/partners/beltek_logo.png"
+              alt="beltek logo"
+              loading="lazy"
+            />
+          </div>
+          <div class="partner-box">
+            <img
+              src="assets/images/partners/trimarchi_logo.png"
+              alt="trimarchi logo"
+              loading="lazy"
+            />
+          </div>
+          <div class="partner-box">
+            <img
+              src="assets/images/partners/saitek_logo.png"
+              alt="saitek logo"
+              loading="lazy"
+            />
+          </div>
+          <div class="partner-box">
+            <img
+              src="assets/images/partners/wilcox_logo.png"
+              alt="wilcox_logo.png"
+              loading="lazy"
+            />
+          </div>
+          <div class="partner-box">
+            <img
+              src="assets/images/partners/Industrias_rojas_logo.png"
+              alt="Industrias_rojas_logo.png"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- FIN contacto -->
-    <!-- Footer -->
+
+    <section id="contacto" class="section contacto">
+      <div class="section-title">
+        <h2>Contacto</h2>
+      </div>
+      <div class="section-center contacto-container">
+        <div class="contacto-cta">
+          <h3>¿Necesitás un presupuesto rápido?</h3>
+          <p>
+            Escribinos por WhatsApp y te asesoramos al instante. ¡Respondemos
+            emergencias y consultas!
+          </p>
+          <a
+            href="https://wa.me/5491164661547"
+            target="_blank"
+            class="btn btn-whatsapp"
+          >
+            Pedir presupuesto por WhatsApp
+          </a>
+        </div>
+        <form
+          id="contactoForm"
+          action="https://formspree.io/f/xnnjzejw"
+          class="contacto-form"
+          method="POST"
+        >
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre"
+            required
+            autocomplete="name"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+            autocomplete="email"
+          />
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            placeholder="Mensaje"
+            required
+          ></textarea>
+          <button type="submit" class="btn contacto-btn">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
     <footer>
       <div class="footer-container">
         <div class="footer-info">
-            <img
-              loading="lazy"
-              src="assets/images/icons/phone_iphone.svg"
-              alt="icono de telefono"
-            />
-            <p class="footer-data">+54 11 6466-1547</p>
-          </div>
-          <div class="footer-info">
-            <img
-              loading="lazy"
-              src="assets/images/icons/description.svg"
-              alt="icono de description"
-            />
-            <p class="footer-data">PERMISO CONSERVADOR</p>
-            <p class="footer-data">MORON: A-0146</p>
-            <p class="footer-data">3 DE FEBRERO: Nº 111</p>
-          </div>
-          <div class="footer-info">
+          <img
+            loading="lazy"
+            src="assets/images/icons/phone_iphone.svg"
+            alt="icono de telefono"
+          />
+          <p class="footer-data">+54 11 6466-1547</p>
+        </div>
+        <div class="footer-info">
+          <img
+            loading="lazy"
+            src="assets/images/icons/description.svg"
+            alt="icono de description"
+          />
+          <p class="footer-data">PERMISO CONSERVADOR</p>
+          <p class="footer-data">MORON: A-0146</p>
+          <p class="footer-data">3 DE FEBRERO: Nº 111</p>
+        </div>
+        <div class="footer-info">
           <img
             loading="lazy"
             src="assets/images/icons/pin_drop.svg"
             alt="icono de direccion"
           />
-          <p class="footer-data">ALMIRANTE BROWN 971 - 1.E </p>
+          <p class="footer-data">ALMIRANTE BROWN 971 - 1.E</p>
         </div>
-        
       </div>
       <p class="footer-derechos">
-        Todos los derechos reservados 2024 - RA ascensores
+        Todos los derechos reservados 2026 - RA ascensores
       </p>
     </footer>
-    <!-- FIN footer -->
-    <!-- Whats app -->
+
     <a
       href="https://wa.me/5491164661547"
       target="_blank"
@@ -290,6 +419,7 @@
         alt="WhatsApp"
       />
     </a>
+
     <script src="js/alertify.min.js" defer></script>
     <script src="js/index.js" defer></script>
   </body>
