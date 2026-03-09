@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // --- Inicialización del Carrusel ---
   initPartnersCarousel();
+  initMap();
 });
 
 /**
@@ -111,4 +112,46 @@ function initPartnersCarousel() {
   track.addEventListener("mouseleave", () => {
     animationId = requestAnimationFrame(animateCarousel);
   });
+}
+
+function initMap() {
+  const mapContainer = document.getElementById("mapa-cobertura");
+  if (!mapContainer) return;
+
+  // 1. Inicializamos el mapa centrado en zona oeste (ej: Morón) con zoom 10
+  const map = L.map("mapa-cobertura").setView([-34.62, -58.65], 10);
+
+  // 2. Capa base de OpenStreetMap (gratis y rápida)
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: "© OpenStreetMap",
+  }).addTo(map);
+
+  // 3. Verificamos que el archivo zonas.js haya cargado bien
+  if (typeof zonasGeoJSON !== "undefined") {
+    // 4. Inyectamos el GeoJSON al mapa con 1 sola línea de código
+    L.geoJSON(zonasGeoJSON, {
+      // Le damos estilo dinámico leyendo los colores de TU propio GeoJSON
+      style: function (feature) {
+        return {
+          color: feature.properties.stroke || "#34a853", // Borde
+          weight: 2,
+          fillColor: feature.properties.fill || "#34a853", // Relleno
+          fillOpacity: feature.properties["fill-opacity"] || 0.4,
+        };
+      },
+
+      // Le agregamos el popup interactivo a cada polígono
+      onEachFeature: function (feature, layer) {
+        if (feature.properties && feature.properties.name) {
+          layer.bindPopup(`<b>${feature.properties.name}</b>`);
+        } else {
+          // El primer elemento de tu JSON no tiene nombre, le ponemos uno genérico
+          layer.bindPopup(`<b>Zona de Cobertura</b>`);
+        }
+      },
+    }).addTo(map);
+  } else {
+    console.warn("No se pudo cargar el archivo de zonas (zonasGeoJSON).");
+  }
 }
