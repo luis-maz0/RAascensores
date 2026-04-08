@@ -603,3 +603,84 @@ footer {
 .btn-whatsapp:hover {
   background-color: #1ebe57;
 }
+
+/* PRODUCTOS */
+.seccion-productos {
+  padding: 5rem 0;
+  background-color: var(--clr-white);
+}
+
+.productos-center {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+  .productos-center {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Pantallas grandes (Desktop) */
+@media screen and (min-width: 1024px) {
+  .productos-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.producto-card {
+  background: var(--clr-secondary);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Fundamental para que la imagen respete los bordes redondeados */
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.producto-img-container {
+  width: 100%;
+  height: 250px; /* Altura fija para que todas las tarjetas se vean iguales */
+  overflow: hidden;
+}
+
+.producto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Evita que las imágenes se estiren o se deformen */
+  transition: transform 0.5s ease;
+}
+
+/* Efecto de zoom sutil en la imagen al pasar el mouse */
+.producto-card:hover .producto-img {
+  transform: scale(1.08);
+}
+
+.producto-info {
+  padding: 1.5rem;
+  text-align: center;
+  flex-grow: 1; /* Empuja el contenido si las descripciones tienen distinto largo */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.producto-info h4 {
+  color: var(--clr-primary); /* Usamos el rojo de la marca para destacar */
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+.producto-info p {
+  margin-bottom: 0;
+  color: var(--clr-gray);
+  font-size: 0.95rem;
+}
