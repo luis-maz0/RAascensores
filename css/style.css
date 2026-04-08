@@ -430,12 +430,21 @@ footer {
   font-weight: bold;
   background-color: var(--clr-primary);
 }
-
 /* Features / Por qué elegirnos */
 .features {
-  background-color: var(--clr-white);
   padding: 5rem 0;
+  text-align: center;
+  background: url(../assets/images/background/fondo_ra_blanco_rojo_invertido.png)
+    center/cover no-repeat;
 }
+
+/* Adaptación para pantallas móviles */
+@media (max-width: 768px) {
+  .features {
+    background-position: 75%;
+  }
+}
+
 .features-center {
   display: grid;
   grid-template-columns: 1fr;
@@ -476,10 +485,25 @@ footer {
   border-radius: 8px;
   z-index: 1;
 }
+.area-title {
+  margin-bottom: 50px;
+}
 .zonas-cobertura {
-  background-color: var(--clr-white);
   padding: 3rem 0;
   text-align: center;
+  /* Añadimos el gradiente antes de la URL de la imagen. 
+     Esto superpone el gradiente sobre la imagen.
+  */
+  background:
+    
+    /* Gradiente sutil */ url(../assets/images/background/fondoCompleto_ra.png)
+    top/cover no-repeat;
+}
+
+@media (max-width: 768px) {
+  .zonas-cobertura {
+    background-position: 25%;
+  }
 }
 .zonas-tags {
   display: flex;
@@ -496,7 +520,7 @@ footer {
 }
 
 .section-title h2 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 2rem;
   color: #333;
 }
